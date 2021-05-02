@@ -8,7 +8,7 @@ for i in range(1, 21):
     if i == 1:
         print(i, for_one)
     elif 1 < i <=4:
-        print(i,for_two_to_four)
+        print(i, for_two_to_four)
     else:
         print(i, for_else)
 
