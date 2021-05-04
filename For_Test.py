@@ -13,18 +13,19 @@
 # sum(map(int,str(num)))
 # print(sum(map(int,str(num))))
 
+# Создаём переменные, для работы первой части программы:
+
 cube_list = []
+sum_list = []
+seven_list = []
+seven_item_list = []
+sum_seven = 0
 
 for i in range(1, 1000, 2):
     cube_list.append(i ** 3)
 print('список кубов нечётных чисел от 1 до 1000: ', cube_list)
 print('индекс последнего элемента списка: ', len(cube_list))
 # print(type(len(cube_list)))
-
-sum_list = []
-seven_list = []
-seven_item_list = []
-sum_seven = 0
 
 
 for ind in range(len(cube_list)):
@@ -44,6 +45,8 @@ print('Список чисел, которые без остатка делят�
 
 print('Сумма всех элементов: ', sum_seven)
 
+# Создаём переменные, для работы второй части программы:
+
 cube_plus_seventeen = []
 seventeen_list = []
 sum_seventeen_list = []
@@ -51,7 +54,7 @@ seventeen_item_list = []
 sum_seventeen = 0
 
 
-# Прибавляем по 17 к списку чисел, которые без остатка делятся на 7
+# Прибавляем по 17 к каждому элементу списка кубов чисел
 
 for numbers in range(len(cube_list)):
     cube_plus_seventeen.append(cube_list[numbers] + 17)
