@@ -13,7 +13,6 @@
 # sum(map(int,str(num)))
 # print(sum(map(int,str(num))))
 
-
 cube_list = []
 
 for i in range(1, 1000, 2):
