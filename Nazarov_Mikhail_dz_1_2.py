@@ -47,6 +47,7 @@ for numbers in range(len(cube_list)):
 # Так же циклом прогоняем по этому списку и вычисляем сумму цирф в каждом элементе
 for ind in range(len(cube_plus_seventeen)):
     sum_seventeen_list.append(sum(map(int, str(cube_plus_seventeen[ind]))))
+# Прям в этом же цикле добавим условие, что сумма цифр должна быть кратна 7 и запишем верные значения в "seventeen_list"
     if sum_seventeen_list[ind] % 7 == 0:  # проверяем, что сумма цифр элемента списка делится нацело на 7
         seventeen_list.append(cube_plus_seventeen[ind])
 
