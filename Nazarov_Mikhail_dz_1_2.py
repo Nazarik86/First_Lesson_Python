@@ -23,8 +23,8 @@ for i in range(1, 1000, 2):
 for ind in range(len(cube_list)):
     sum_list.append(sum(map(int, str(cube_list[ind]))))  # map - указывает, что обработать нужно весь список, sum - сумма элемента списка
 # Прям в этом же цикле добавим условие, что сумма цифр должна быть кратна 7 и запишем верные значения в "seven_list"
-    if sum_list[ind] % 7 == 0:  # проверяем, что сумма цифр элемента списка делится нацело на 7
-        seven_list.append(cube_list[ind])  # записываем в список "seven_list" значение числа из "cube_list", которые удовлетворяют условию
+    if sum_list[ind] % 7 == 0:  # Проверяем, что сумма цифр элемента списка делится нацело на 7
+        seven_list.append(cube_list[ind])  # Записываем в список "seven_list" значение числа из "cube_list", которые удовлетворяют условию
 
 # Циклом посчитаем сумму всех элементов списка, в которых сумма всех цифр кратна 7
 for x in seven_list:
@@ -48,10 +48,10 @@ for numbers in range(len(cube_list)):
 for ind in range(len(cube_plus_seventeen)):
     sum_seventeen_list.append(sum(map(int, str(cube_plus_seventeen[ind]))))
 # Прям в этом же цикле добавим условие, что сумма цифр должна быть кратна 7 и запишем верные значения в "seventeen_list"
-    if sum_seventeen_list[ind] % 7 == 0:  # проверяем, что сумма цифр элемента списка делится нацело на 7
+    if sum_seventeen_list[ind] % 7 == 0:  # Проверяем, что сумма цифр элемента списка делится нацело на 7
         seventeen_list.append(cube_plus_seventeen[ind])
 
-for y in seventeen_list:  # считаем сумму всех элементов списка, в которых сумма всех цифр кратна 7
+for y in seventeen_list:  # Считаем сумму всех элементов списка, в которых сумма всех цифр кратна 7
     sum_seventeen = sum_seventeen + y
 
 # Выводим результат сложения на экран
